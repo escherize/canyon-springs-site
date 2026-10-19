@@ -28,8 +28,9 @@ jobs:
       - run: npm ci
       - run: node scripts/docx2md.check.mjs
       - run: npm run notes
-      - run: npm run check
       - run: npm run build
+      # After build: the build generates src/routeTree.gen.ts, which the check needs.
+      - run: npm run check
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist/client
