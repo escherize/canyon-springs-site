@@ -159,6 +159,22 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 .faq summary:hover { color: var(--olive); }
 .faq p { color: var(--ink-2); padding-bottom: 1rem; max-width: 60ch; }
 
+/* Canyon Kids: editorial sections, Scripture, and readable parent resource links. */
+.kids-page .split > * { min-width: 0; }
+.kids-page .faq-band a:hover { color: var(--ink); }
+.kids-page [id] { scroll-margin-top: 6rem; }
+.kids-service { margin-block: 1.5rem; color: var(--olive); font-size: var(--step-1); }
+.kids-scripture { margin: 1.5rem 0 0; max-width: 64ch; }
+.kids-scripture p { font-family: var(--display); font-size: var(--step-1); line-height: 1.45; }
+.kids-scripture cite { display: block; font-style: normal; font-size: var(--step--1); font-weight: 600; color: var(--ink-2); }
+.kids-section-intro { margin-block: 1rem 2.5rem; max-width: 64ch; color: var(--ink-2); }
+.kids-goals h3 { margin-bottom: 1rem; }
+.kids-resources { display: grid; grid-template-columns: minmax(0, 1fr); column-gap: 3rem; list-style: none; padding: 0; margin: 2rem 0 0; }
+.kids-resources li { border-top: 1px solid var(--line); }
+.kids-resources a { display: flex; justify-content: space-between; min-height: 4.5rem; padding-block: 0.8rem; line-height: 1.4; overflow-wrap: anywhere; }
+.kids-resources a::after { flex: none; }
+@media (min-width: 48rem) { .kids-resources { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
 /* Load-in motion: content is visible by default; motion only adds. */
 @media (prefers-reduced-motion: no-preference) {
   .rise { animation: rise 0.9s var(--ease) both; animation-delay: calc(var(--i, 0) * 90ms); }

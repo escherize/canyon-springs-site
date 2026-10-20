@@ -10,6 +10,7 @@ Preview: https://escherize.com/canyon-springs-site/
 - **Screen-filling homepage photo.** The hero fills the visible viewport below the 4.5rem header and its 1px border, on desktop and phones. Dynamic viewport sizing follows mobile browser controls; the section can grow if its text and buttons need more space. Belong / Grow / Serve follows directly below it, with no separate Sunday information box.
 - **Prominent, left-aligned visitor information.** Hero headings, service times, address, and action labels use a larger responsive scale, set lower in the photo with viewport-aware top spacing. The hero and closing visit buttons align with the text above; actions wrap onto left-aligned rows on narrow screens.
 - **Pages and menu.** The right-aligned main menu is Home, About Us, Ministries, Watch, and Contact. Ministries opens a keyboard- and touch-accessible submenu for Students, Kids, Life Groups, Women, and Garden, plus an All ministries overview at `/ministries`. The homepage Serve section also links to that overview. Directory labels use bold DM Sans with space between names and descriptions for readability. Existing ministry URLs stay unchanged. Events, giving, and visit pages remain available through secondary links. Mobile navigation closes after choosing a page.
+- **Canyon Kids.** `/kids` adapts the [current ministry page](https://www.canyonspringschristian.com/canyonkids) and [FAQ](https://www.canyonspringschristian.com/general-5) to the Sage style: mission, values, Know/Do goals, Scripture, 11 FAQ topics, all 10 parent resources, volunteering, wish list, contact, and social links. Editable content is in `src/data/kids.ts`. Prayer stays on the page with Deuteronomy 6:5–7 rather than linking to the unfinished Wix prayer template; events link to the church events page instead of duplicating empty Wix event widgets.
 - **Sermons from YouTube.** `src/data/messages.json` is a snapshot of the channel; the Talents entry uses [the supplied October 11 video](https://youtu.be/00mW4YF0nsc). The real site would refresh the snapshot automatically.
 - **Events from Church Center.** `src/data/events.json` is a snapshot of the public calendar. Weekly listings cover Sunday worship, Canyon Students, and Women's Life Group. Past dates are dropped at build time, and the deploy reruns every Monday, so nothing goes stale.
 - **Sermon notes from Word files.** Drop `YYYY-MM-DD-name.docx` into `notes-inbox/` and run `npm run notes`. It writes Markdown to `src/content/notes/`, and the message page turns the blanks into fill-in fields. Underline an answer in Word (instead of typing ______) and that blank gets a hint button.
@@ -33,6 +34,7 @@ Pushing to `main` deploys to GitHub Pages (`.github/workflows/deploy.yml`). To b
 | What | Where |
 |---|---|
 | Church facts: address, times, links, nav | `src/data/site.ts` |
+| Canyon Kids mission, values, goals, FAQ, and resource links | `src/data/kids.ts` |
 | Page text in Markdown (statement of faith) | `src/text/` |
 | Sermon notes, one file per Sunday | `src/content/notes/` |
 | Sermons and events snapshots | `src/data/messages.json`, `src/data/events.json` |

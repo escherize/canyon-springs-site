@@ -1,0 +1,77 @@
+// Content adapted from the church's current Canyon Kids page and linked FAQ.
+// Sources: https://www.canyonspringschristian.com/canyonkids
+//          https://www.canyonspringschristian.com/general-5
+export const kids = {
+  ages: "Newborn through 5th grade",
+  intro: "Canyon Kids equips children and families to pursue a life rooted in Christ and the Word of God, impacting this generation and generations to come.",
+  email: "Kids@canyonchristian.com",
+  volunteerUrl: "https://www.canyonspringschristian.com/_files/ugd/4f69fe_58f2c86ab8a247b9a445908c5b2cec25.pdf",
+  wishlistUrl: "https://www.amazon.com/hz/wishlist/ls/CT7OSTOXSXIX?ref_=wl_share",
+  instagram: "https://www.instagram.com/canyon_kids_",
+  facebook: "https://www.facebook.com/groups/canyonspringskids",
+  mission: [
+    { title: "Teach children", text: "To love God with all their hearts, souls, and minds." },
+    { title: "Train up children", text: "To live a life rooted in Christ." },
+    { title: "Empower families", text: "To be active participants in teaching and training." },
+  ],
+  values: [
+    { title: "Prayer-driven", text: "Everything we do begins and ends with prayer." },
+    { title: "Christ-centered", text: "We intentionally follow Christ and His teachings in everything we do." },
+    { title: "Mission-focused", text: "We encourage a willingness and a desire to tell others about Jesus." },
+    { title: "Biblically-based", text: "Our teaching is grounded in Scripture and God's Word." },
+    { title: "All are treasured", text: "Every child is created in the image of God." },
+  ],
+  hopesIntro: "As children participate in Canyon Kids, our desire is for them to know Christ and put their faith into practice.",
+  know: [
+    "The character of God",
+    "God's plan of salvation through Jesus Christ",
+    "Their identity in Christ",
+    "The importance of a life rooted in Christ",
+    "What it means to have a relationship with Jesus",
+    "That they are loved by God and the people of Canyon Springs",
+  ],
+  do: [
+    "Read, study, and memorize the Bible",
+    "Sing and memorize songs of worship",
+    "Develop an active prayer life",
+    "Develop and abide in a personal relationship with Jesus Christ",
+    "Actively participate in the life of Canyon Springs",
+    "Show compassion, encourage, and serve one another",
+    "Pursue Christ and practice these things at home with their families",
+  ],
+  scriptures: {
+    psalm: {
+      reference: "Psalm 127:3",
+      text: "Behold, children are a heritage from the Lord, the fruit of the womb a reward.",
+    },
+    deuteronomy: {
+      reference: "Deuteronomy 6:5–7",
+      text: "You shall love the Lord your God with all your heart and with all your soul and with all your might. And these words that I command you today shall be on your heart. You shall teach them diligently to your children, and shall talk of them when you sit in your house, and when you walk by the way, and when you lie down, and when you rise.",
+    },
+  },
+  resources: [
+    { title: "RightNow Media", href: "https://www.rightnowmedia.org/" },
+    { title: "Yippee", href: "https://www.yippee.tv/" },
+    { title: "Raising Kingdom Kids", href: "https://store.tonyevans.org/purchase/raising-kingdom-kids" },
+    { title: "The Lifegiving Parent", href: "https://wholeheart.org/wh-store" },
+    { title: "Parenting: 14 Gospel Principles", href: "https://store.paultripp.com/collections/parenting-14-gospel-principles-that-can-radically-change-your-family" },
+    { title: "Bringing Up Boys", href: "https://store.focusonthefamily.com/bringing-up-boys/" },
+    { title: "Bringing Up Girls", href: "https://store.focusonthefamily.com/bringing-up-girls-paperback/" },
+    { title: "The 5 Love Languages of Children", href: "https://5lovelanguages.com/store/the-5-love-languages-of-children" },
+    { title: "Foundations", href: "https://ruthandtroy.com/" },
+    { title: "Indescribable", href: "https://www.amazon.com/Indescribable-Devotions-Kids-About-Science/dp/0718086104" },
+  ],
+  faq: [
+    { question: "What ages are each class?", answer: "Nursery/Toddler: 0–3 years. PreK/K: 4–5. 1st–3rd: 6–8 years old. 4th–5th: 9–11 years old." },
+    { question: "It's my first time. How do I register my children?", answer: "There is a computer at the front desk where someone will ask for your names, your children's names, birthdates, address, email, and phone number. This registers them in the system so you can check them in." },
+    { question: "How do we check in?", answer: "There are check-in computers in the main hallway. Enter your phone number, select the children you're checking in, and click “done.” Labels will print for each child to stick on their shirt. You keep the parent tag for pickup; the person picking up a child must have the matching tag." },
+    { question: "What time can I check my child in?", answer: "Children can begin to arrive in class ten minutes before service begins, as long as there are two teachers in the class." },
+    { question: "Who are the teachers?", answer: "Loving, dedicated volunteers who care about your child and their spiritual growth. Each volunteer is a follower of Christ, has attended the church for at least 3 months, and has a cleared background check. They're trained by the Children's Director and equipped each week with the Biblical lesson and teaching tools. Some are experienced with children with special needs." },
+    { question: "How do I know my children are safe?", answer: "Teachers are carefully selected followers of Christ who have attended the church for at least 3 months, completed an application, and cleared a background check. Your child stays in the Children's Ministry area until you pick them up with a security tag that matches their code. Trained team members serve on the security team each week: they walk the halls, check classrooms, and keep everyone at church safe." },
+    { question: "What if my child needs me during the service?", answer: "The code on your parent tag will appear on the screen during the service (for example, “Child pickup: XMN”). Head to the class to check in with your child and their teacher." },
+    { question: "What if my child needs the restroom?", answer: "An adult accompanies them and waits outside. If your child needs help, a second qualified adult is asked to assist, so your child is never alone with an adult. In the nursery, you'll be asked whether you'd like the teacher to change diapers or would rather be paged." },
+    { question: "How do we know what my child is learning?", answer: "Each week children are taught chronologically through the Bible: 15 minutes to socialize and pray with their class, worship with our worship leaders, then back to class to read the Bible, answer questions, do activities, and work on a memory verse. At pickup you'll get a five-day family devotional, plus a monthly newsletter." },
+    { question: "How do I stay up to date on events?", answer: "Look for updates in the church app, on the website, on flyers in the kids' area, and in the monthly newsletter sent to parents." },
+    { question: "Why did my child come home with a prize?", answer: "Elementary children are encouraged to memorize Scripture, bring their Bible, and practice Biblical guidelines: loving others (Matthew 22:37–39; 1 Peter 4:8), being respectful (Ephesians 4:2–9; Hebrews 13:17), being honest (Ephesians 4:25; Proverbs 12:22), working hard (Colossians 3:23–24; Philippians 2:14), and serving others (1 Thessalonians 5:11; 1 Peter 4:10). Teachers may award treasure coins for practicing these things; children can exchange them for a treasure-box prize at the end of class." },
+  ],
+} as const;
