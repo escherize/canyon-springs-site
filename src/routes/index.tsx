@@ -31,18 +31,6 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="wrap sunday-wrap">
-          <section className="sunday on-dark rise" style={{ "--i": 5 } as React.CSSProperties} aria-labelledby="sunday-h">
-            <h2 id="sunday-h">Join Us This Sunday</h2>
-            <p className="times">{church.services.map((t) => <span key={t}>{t}<small>AM</small></span>)}</p>
-            <p className="sunday-detail">Kids (newborn–5th grade) have their own programs at both services.</p>
-            <p className="sunday-detail">A community of Christians in Middleton who gather to encourage one another, grow in our faith, and invite others to know and follow Jesus.</p>
-            <div className="btn-row">
-              <Link className="btn" to="/visit">What to expect</Link>
-              <a className="btn ghost" href={church.mapUrl} rel="noopener">Get Directions</a>
-            </div>
-          </section>
-        </div>
       </section>
 
       <section className="section pillars wrap" aria-label="Who we are">
