@@ -109,7 +109,7 @@ function Visit() {
         <div className="wrap closing">
           <h2>Questions before Sunday?</h2>
           <p>Call <a href={church.phoneHref}>{church.phone}</a> or email <a href={`mailto:${church.email}`}>{church.email}</a>.</p>
-          <div className="btn-row"><a className="btn" href={church.mapUrl} rel="noopener">Get directions</a><Link className="btn ghost" to="/about" hash="beliefs">What we believe</Link></div>
+          <div className="btn-row"><a className="btn" href={church.mapUrl} rel="noopener">Get directions</a><Link className="btn ghost" to="/beliefs">What we believe</Link></div>
         </div>
       </section>
     </>

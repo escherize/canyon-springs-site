@@ -1,11 +1,9 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { beliefs } from "../lib/content";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHead } from "../components/PageHead";
-import { Markdown } from "../components/Markdown";
 import { head } from "../lib/head";
 
 export const Route = createFileRoute("/about")({
-  head: () => head("About Us", "Love God, love others, serve the world. Meet the team at Canyon Springs and read what we believe."),
+  head: () => head("About Us", "Love God, love others, serve the world. Learn about Canyon Springs and meet our team."),
   component: About,
 });
 
@@ -23,7 +21,9 @@ const team = [
 function About() {
   return (
     <>
-      <PageHead title="About Us" lead="Love God. Love others. Serve the world. That's our mission, and our process for making disciples: bringing everyone at Canyon Springs into a lifelong, ever-deepening relationship with Jesus Christ and with the family of God." photo="worship.jpg" alt="A Sunday service seen from the back of the room: people seated, the band and screen up front." pos="50% 55%" />
+      <PageHead title="About Us" lead="Love God. Love others. Serve the world. That's our mission, and our process for making disciples: bringing everyone at Canyon Springs into a lifelong, ever-deepening relationship with Jesus Christ and with the family of God." photo="worship.jpg" alt="A Sunday service seen from the back of the room: people seated, the band and screen up front." pos="50% 55%">
+        <Link className="go" to="/beliefs">Read what we believe</Link>
+      </PageHead>
       <section className="wrap section split">
         <div><h2>What that means</h2></div>
         <dl className="facts">
@@ -42,10 +42,6 @@ function About() {
             ))}
           </ul>
         </div>
-      </section>
-      <section id="beliefs" className="wrap section split">
-        <div><h2>What we believe</h2></div>
-        <Markdown className="prose beliefs" text={beliefs} />
       </section>
     </>
   );

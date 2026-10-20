@@ -8,7 +8,7 @@ export const Route = createFileRoute("/request")({
   component: Request,
 });
 
-const pages = ["Home", "About Us / beliefs", "Ministries", "Students", "Kids", "Life Groups", "Women", "Garden", "Watch / sermon notes", "Contact", "Plan a visit", "Events", "Give", "Something new"];
+const pages = ["Home", "About Us", "What we believe", "Ministries", "Students", "Kids", "Life Groups", "Women", "Garden", "Watch / sermon notes", "Contact", "Plan a visit", "Events", "Give", "Something new"];
 
 function Request() {
   return (

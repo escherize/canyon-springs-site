@@ -107,7 +107,7 @@ export function Layout({ children }: { children: ReactNode }) {
           <div>
             <h2 className="foot-h">More</h2>
             <ul className="foot-links">
-              {footerNav.map((l) => <li key={l.label}><Link to={l.to} hash={"hash" in l ? l.hash : undefined}>{l.label}</Link></li>)}
+              {footerNav.map((l) => <li key={l.label}><Link to={l.to}>{l.label}</Link></li>)}
             </ul>
           </div>
         </div>

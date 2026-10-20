@@ -32,6 +32,7 @@ A local, family-oriented church: Sunday worship and teaching, a newborn–5th gr
 - Giving: Pushpay. There is a church app (App Store and Google Play). Events and sign-ups live in Church Center.
 
 - Main pages: Home, About Us, Ministries, Watch, and Contact. Ministries groups Students, Kids, Life Groups, Women, and Garden; each retains its existing URL, with an overview at `/ministries`. Events, giving, and visit information remain secondary destinations.
+- What we believe is a standalone page at `/beliefs`, linked from About Us and Plan a Visit without a main-menu item. About Us contains the mission and team, not the full statement of faith.
 
 ## Capabilities and Constraints
 
