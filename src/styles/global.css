@@ -289,9 +289,9 @@ a.tt-what:hover { text-decoration: underline; }
 .ministries { padding-bottom: clamp(3.5rem, 2rem + 6vw, 7.5rem); }
 .ministries h2 { margin-bottom: 1.5rem; }
 .min-list { display: grid; border-top: 2px solid var(--ink); }
-.min { display: grid; grid-template-columns: 1fr; gap: 0.2rem; align-items: baseline; padding: 1.2rem 0; border-bottom: 1px solid var(--line); text-decoration: none; color: var(--ink); position: relative; }
+.min { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.5rem 2rem; align-items: center; padding: 1.2rem 0; border-bottom: 1px solid var(--line); text-decoration: none; color: var(--ink); position: relative; }
 @media (min-width: 48rem) { .min { grid-template-columns: minmax(16rem, 1fr) 1.4fr auto; } .min::after { content: "→"; color: var(--olive); font-size: var(--step-1); transition: transform 0.25s var(--ease); } }
-.min-name { font-size: var(--step-2); font-weight: var(--heading-weight); font-family: var(--display); letter-spacing: var(--heading-track); line-height: 1.1; transition: color 0.2s var(--ease); }
+.min-name { font-size: var(--step-2); font-weight: 700; font-family: var(--font); letter-spacing: 0.01em; line-height: 1.25; transition: color 0.2s var(--ease); }
 .min-detail { color: var(--ink-2); }
 .min:hover .min-name { color: var(--olive); }
 .min:hover::after { transform: translateX(6px); }
