@@ -15,7 +15,7 @@ export const Route = createFileRoute("/groups")({
         <div className="stack">
           <p>Get connected today! See the current list of groups, or email the office with questions.</p>
           <div className="btn-row">
-            <a className="btn" href="https://drive.google.com/file/d/1YGMKLT0RKjscLu7Ce6n9Vm4e1c8zfreC/view?usp=sharing" rel="noopener">See the group list</a>
+            <a className="btn" href="https://drive.google.com/file/d/1YGMKLT0RKjscLu7Ce6n9Vm4e1c8zfreC/view?usp=sharing" target="_blank" rel="noopener" aria-label="See the group list (opens in a new tab)">See the group list</a>
             <a className="btn ghost" href="mailto:office@canyonchristian.com?subject=Life%20Group%20question">Email the office</a>
           </div>
         </div>
