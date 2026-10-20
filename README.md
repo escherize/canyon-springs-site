@@ -38,6 +38,8 @@ Pushing to `main` deploys to GitHub Pages (`.github/workflows/deploy.yml`). To b
 | Look and feel: colors, type, every style | `src/styles/global.css` |
 | Photos and logo | `public/` |
 
+The header, mobile menu, and footer use `public/logo.png`, cropped from the supplied `public/Canyon-Springs-Horizontal-Logo-Original.png` to remove its white margins. `public/logo-mark.png` is the circular mark from that same image, used as the favicon. Keep the original colors; dark surfaces give the logo a white backing.
+
 ## Stack
 
 Vite, React 19, TanStack Start with every route prerendered to HTML (`vite.config.ts`). No server. Content is Markdown and JSON in the repo, loaded at build time. react-markdown renders the Markdown; `src/lib/rehype-blanks.ts` turns `{{blank:answer}}` into fill-in fields.
