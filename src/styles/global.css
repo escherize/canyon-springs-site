@@ -183,7 +183,8 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 .menu-top .logo-panel { max-width: calc(100% - 4rem); }
 .foot-logo { margin-bottom: 1rem; }
 
-.nav-desktop ul { display: flex; gap: clamp(0.75rem, 1.6vw, 1.75rem); list-style: none; margin: 0; padding: 0; }
+.nav-desktop { margin-inline-start: auto; }
+.nav-desktop ul { display: flex; justify-content: flex-end; gap: clamp(0.75rem, 1.6vw, 1.75rem); list-style: none; margin: 0; padding: 0; }
 .nav-desktop a { color: var(--ink); text-decoration: none; font-weight: 550; font-size: var(--step--1); display: inline-flex; min-height: 2.75rem; align-items: center; border-bottom: 2px solid transparent; }
 .nav-desktop a:hover { color: var(--rust); border-bottom-color: currentColor; }
 .nav-desktop a[aria-current="page"] { color: var(--rust); border-bottom-color: var(--rust); }
@@ -203,10 +204,10 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 .menu-top { display: flex; justify-content: space-between; align-items: center; min-height: 3.5rem; }
 .menu .menu-btn { display: grid; color: white; }
 .menu .menu-btn:hover { background: oklch(1 0 0 / 0.12); }
-.menu ul { list-style: none; padding: 0; margin: 1.5rem 0; }
+.menu ul { list-style: none; padding: 0; margin: 1.5rem 0; text-align: right; }
 .menu li a { display: block; padding: 0.55rem 0; font-family: var(--display); font-size: var(--step-2); font-weight: var(--heading-weight); text-transform: var(--heading-case); text-decoration: none; letter-spacing: var(--heading-track); }
 .menu li a:hover { color: var(--gold); }
-.menu-meta { margin-top: auto; color: var(--tan); }
+.menu-meta { margin-top: auto; color: var(--tan); text-align: right; }
 
 .site-footer { background: var(--charcoal); padding-block: clamp(3rem, 2rem + 4vw, 5rem) 2rem; }
 .foot-grid { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); }
