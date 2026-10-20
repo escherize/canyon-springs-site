@@ -7,6 +7,7 @@ This repo is edited by people and by AI tools (Lovable, Claude Code, Copilot). R
 Keep content out of components. Page copy and facts belong in files that a non-programmer can edit:
 
 - **Facts** (address, service times, phone, links, nav): `src/data/site.ts`. Change them there, never inline.
+- **Navigation and ministry directory**: `nav` and `ministries` in `src/data/site.ts` define the main menu, Ministries submenu, overview page, and homepage ministry listings. Keep the labels and hierarchy there.
 - **Long text** (statement of faith, anything over a paragraph that is not page layout): Markdown in `src/text/`, rendered with the `Markdown` component.
 - **Sermon notes**: `src/content/notes/*.md`, generated from Word files by `npm run notes`. Never hand-edit these; fix the `.docx` in `notes-inbox/` and rerun.
 - **Sermons and events**: `src/data/messages.json` and `src/data/events.json`. These are snapshots of YouTube and Church Center. Edit them only to update the snapshot.

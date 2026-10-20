@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { church } from "../data/site";
+import { church, ministries } from "../data/site";
 import { events, messages, asset, shortDate, to } from "../lib/content";
 import { Sermon } from "../components/Sermon";
 import { head } from "../lib/head";
@@ -94,11 +94,12 @@ function Home() {
       <section className="ministries" aria-labelledby="min-h">
         <div className="wrap"><h2 id="min-h">For every age</h2></div>
         <div className="wrap min-list">
-          <Link className="min" to="/kids"><span className="min-name">Kids</span><span className="min-detail">Newborn–5th grade · Sundays at 9:00 and 10:30</span></Link>
-          <Link className="min" to="/students"><span className="min-name">Students</span><span className="min-detail">6th–12th grade · Sundays 10:30, Wednesdays 6:30 PM</span></Link>
-          <Link className="min" to="/groups"><span className="min-name">Life Groups</span><span className="min-detail">Small groups that meet weekly</span></Link>
-          <Link className="min" to="/women"><span className="min-name">Women</span><span className="min-detail">Bible studies, retreats and a Friday morning group</span></Link>
-          <Link className="min" to="/garden"><span className="min-name">Garden Outreach</span><span className="min-detail">Gardening, teaching, and sharing the harvest</span></Link>
+          {ministries.map((ministry) => (
+            <Link className="min" key={ministry.to} to={ministry.to}>
+              <span className="min-name">{ministry.label}</span>
+              <span className="min-detail">{ministry.description}</span>
+            </Link>
+          ))}
         </div>
       </section>
 

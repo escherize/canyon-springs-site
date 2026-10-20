@@ -31,6 +31,8 @@ A local, family-oriented church: Sunday worship and teaching, a newborn–5th gr
 - A new sermon video goes up on YouTube every week, with fill-in-the-blank sermon notes written in Word.
 - Giving: Pushpay. There is a church app (App Store and Google Play). Events and sign-ups live in Church Center.
 
+- Main pages: Home, About Us, Ministries, Watch, and Contact. Ministries groups Students, Kids, Life Groups, Women, and Garden; each retains its existing URL, with an overview at `/ministries`. Events, giving, and visit information remain secondary destinations.
+
 ## Capabilities and Constraints
 
 - Weekly content (sermons, events, notes) must flow from the tools staff already use: YouTube, Church Center, Word. A design that needs code to update is a bug.

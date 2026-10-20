@@ -184,10 +184,17 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 .foot-logo { margin-bottom: 1rem; }
 
 .nav-desktop { margin-inline-start: auto; }
-.nav-desktop ul { display: flex; justify-content: flex-end; gap: clamp(0.75rem, 1.6vw, 1.75rem); list-style: none; margin: 0; padding: 0; }
-.nav-desktop a { color: var(--ink); text-decoration: none; font-weight: 550; font-size: var(--step--1); display: inline-flex; min-height: 2.75rem; align-items: center; border-bottom: 2px solid transparent; }
-.nav-desktop a:hover { color: var(--rust); border-bottom-color: currentColor; }
-.nav-desktop a[aria-current="page"] { color: var(--rust); border-bottom-color: var(--rust); }
+.nav-desktop > ul { display: flex; justify-content: flex-end; gap: clamp(0.75rem, 1.6vw, 1.75rem); list-style: none; margin: 0; padding: 0; }
+.nav-desktop a, .nav-desktop summary { color: var(--ink); text-decoration: none; font-weight: 550; font-size: var(--step--1); display: inline-flex; min-height: 2.75rem; align-items: center; border-bottom: 2px solid transparent; }
+.nav-desktop a:hover, .nav-desktop summary:hover { color: var(--rust); border-bottom-color: currentColor; }
+.nav-desktop a[aria-current="page"], .nav-desktop .nav-group:has([aria-current="page"]) > summary { color: var(--rust); border-bottom-color: var(--rust); }
+.nav-group { position: relative; }
+.nav-group > summary { display: flex; align-items: center; justify-content: flex-end; gap: 0.35rem; list-style: none; cursor: pointer; }
+.nav-group > summary::-webkit-details-marker { display: none; }
+.nav-group[open] > summary svg { transform: rotate(180deg); }
+.nav-desktop .nav-submenu { position: absolute; top: 100%; right: 0; min-width: 14rem; max-width: calc(100vw - 2 * var(--gutter)); margin: 0; padding: 0.5rem; list-style: none; background: var(--cream); border: 1px solid var(--line); border-radius: var(--radius); }
+.nav-desktop .nav-submenu a { display: flex; justify-content: flex-end; padding: 0.5rem 0.75rem; border-bottom: 0; white-space: nowrap; }
+.nav-desktop .nav-submenu a:hover { background: var(--tan-wash); }
 
 .bar-actions { display: flex; align-items: center; gap: 0.5rem; }
 .menu-btn { display: none; width: 3rem; height: 3rem; border: 0; background: transparent; color: inherit; border-radius: 999px; cursor: pointer; place-items: center; }
@@ -205,8 +212,10 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 .menu .menu-btn { display: grid; color: white; }
 .menu .menu-btn:hover { background: oklch(1 0 0 / 0.12); }
 .menu ul { list-style: none; padding: 0; margin: 1.5rem 0; text-align: right; }
-.menu li a { display: block; padding: 0.55rem 0; font-family: var(--display); font-size: var(--step-2); font-weight: var(--heading-weight); text-transform: var(--heading-case); text-decoration: none; letter-spacing: var(--heading-track); }
-.menu li a:hover { color: var(--gold); }
+.menu li a, .menu .nav-group > summary { display: flex; justify-content: flex-end; padding: 0.55rem 0; font-family: var(--display); font-size: var(--step-2); font-weight: var(--heading-weight); text-transform: var(--heading-case); text-decoration: none; letter-spacing: var(--heading-track); }
+.menu li a:hover, .menu summary:hover { color: var(--gold); }
+.menu .nav-submenu { margin: 0 0 0.75rem; }
+.menu .nav-submenu a { font-family: var(--font); font-size: var(--step-0); font-weight: 500; min-height: 2.75rem; padding-block: 0.5rem; }
 .menu-meta { margin-top: auto; color: var(--tan); text-align: right; }
 
 .site-footer { background: var(--charcoal); padding-block: clamp(3rem, 2rem + 4vw, 5rem) 2rem; }

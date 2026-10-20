@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { MouseEvent, ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
 import { church, nav, footerNav } from "../data/site";
 import { asset } from "../lib/content";
@@ -9,6 +9,47 @@ const Menu = () => (
 const Close = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
 );
+
+function closeNavigation(event: MouseEvent<HTMLAnchorElement>) {
+  event.currentTarget.closest("details")?.removeAttribute("open");
+  event.currentTarget.closest<HTMLElement>("nav[popover]")?.hidePopover();
+}
+
+function NavigationItems() {
+  return nav.map((item) => (
+    <li key={item.to}>
+      {"children" in item ? (
+        <details
+          className="nav-group"
+          onBlur={(event) => {
+            if (!event.currentTarget.contains(event.relatedTarget)) event.currentTarget.open = false;
+          }}
+          onKeyDown={(event) => {
+            if (event.key === "Escape" && event.currentTarget.open) {
+              event.preventDefault();
+              event.stopPropagation();
+              event.currentTarget.open = false;
+              event.currentTarget.querySelector("summary")?.focus();
+            }
+          }}
+        >
+          <summary>
+            {item.label}
+            <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+          </summary>
+          <ul className="nav-submenu">
+            <li><Link to={item.to} onClick={closeNavigation} activeProps={{ "aria-current": "page" }}>{item.overviewLabel}</Link></li>
+            {item.children.map((child) => (
+              <li key={child.to}><Link to={child.to} onClick={closeNavigation} activeProps={{ "aria-current": "page" }}>{child.label}</Link></li>
+            ))}
+          </ul>
+        </details>
+      ) : (
+        <Link to={item.to} onClick={closeNavigation} activeOptions={{ exact: item.to === "/" }} activeProps={{ "aria-current": "page" }}>{item.label}</Link>
+      )}
+    </li>
+  ));
+}
 
 export function Layout({ children }: { children: ReactNode }) {
   return (
@@ -21,9 +62,7 @@ export function Layout({ children }: { children: ReactNode }) {
           </Link>
           <nav aria-label="Main" className="nav-desktop">
             <ul>
-              {nav.slice(1).map((l) => (
-                <li key={l.to}><Link to={l.to} activeProps={{ "aria-current": "page" }}>{l.label}</Link></li>
-              ))}
+              <NavigationItems />
             </ul>
           </nav>
           <div className="bar-actions">
@@ -37,7 +76,7 @@ export function Layout({ children }: { children: ReactNode }) {
             <button popoverTarget="menu" popoverTargetAction="hide" className="menu-btn" aria-label="Close menu"><Close /></button>
           </div>
           <ul>
-            {nav.map((l) => <li key={l.to}><Link to={l.to}>{l.label}</Link></li>)}
+            <NavigationItems />
           </ul>
           <p className="menu-meta">Sundays {church.services.join(" & ")} AM<br />{church.street}, Middleton</p>
         </nav>

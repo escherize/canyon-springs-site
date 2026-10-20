@@ -5,7 +5,7 @@ import { Markdown } from "../components/Markdown";
 import { head } from "../lib/head";
 
 export const Route = createFileRoute("/about")({
-  head: () => head("About", "Love God, love others, serve the world. Meet the team at Canyon Springs and read what we believe."),
+  head: () => head("About Us", "Love God, love others, serve the world. Meet the team at Canyon Springs and read what we believe."),
   component: About,
 });
 
@@ -23,7 +23,7 @@ const team = [
 function About() {
   return (
     <>
-      <PageHead title="Love God. Love others. Serve the world." lead="That's our mission, and our process for making disciples: bringing everyone at Canyon Springs into a lifelong, ever-deepening relationship with Jesus Christ and with the family of God." photo="worship.jpg" alt="A Sunday service seen from the back of the room: people seated, the band and screen up front." pos="50% 55%" />
+      <PageHead title="About Us" lead="Love God. Love others. Serve the world. That's our mission, and our process for making disciples: bringing everyone at Canyon Springs into a lifelong, ever-deepening relationship with Jesus Christ and with the family of God." photo="worship.jpg" alt="A Sunday service seen from the back of the room: people seated, the band and screen up front." pos="50% 55%" />
       <section className="wrap section split">
         <div><h2>What that means</h2></div>
         <dl className="facts">

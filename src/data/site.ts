@@ -24,15 +24,20 @@ export const church = {
 // When the snapshot of YouTube and Church Center was taken.
 export const snapshot = "October 14, 2026";
 
+export const ministries = [
+  { label: "Students", to: "/students", description: "6th–12th grade · Sundays 10:30, Wednesdays 6:30 PM" },
+  { label: "Kids", to: "/kids", description: "Newborn–5th grade · Sundays at 9:00 and 10:30" },
+  { label: "Life Groups", to: "/groups", description: "Small groups that meet weekly" },
+  { label: "Women", to: "/women", description: "Bible studies, retreats and a Friday morning group" },
+  { label: "Garden", to: "/garden", description: "Gardening, teaching, and sharing the harvest" },
+] as const;
+
 export const nav = [
-  { label: "Plan a visit", to: "/visit" },
+  { label: "Home", to: "/" },
+  { label: "About Us", to: "/about" },
+  { label: "Ministries", to: "/ministries", overviewLabel: "All ministries", children: ministries },
   { label: "Watch", to: "/watch" },
-  { label: "Events", to: "/events" },
-  { label: "Kids", to: "/kids" },
-  { label: "Students", to: "/students" },
-  { label: "Groups", to: "/groups" },
-  { label: "About", to: "/about" },
-  { label: "Give", to: "/give" },
+  { label: "Contact", to: "/contact" },
 ] as const;
 
 export const footerNav = [
