@@ -9,6 +9,7 @@ Keep content out of components. Page copy and facts belong in files that a non-p
 - **Facts** (address, service times, phone, links, nav): `src/data/site.ts`. Change them there, never inline.
 - **Navigation and ministry directory**: `nav` and `ministries` in `src/data/site.ts` define the main menu, Ministries submenu, overview page, and homepage ministry listings. Keep the labels and hierarchy there.
 - **Canyon Kids content**: `src/data/kids.ts` holds its mission, values, learning goals, Scripture, FAQ, contact, and resource links, adapted from the source URLs listed at the top. Keep the copy there; `src/routes/kids.tsx` owns the layout.
+- **Women's Ministry content**: `src/data/women.ts` holds its gatherings, flyer-transcribed Life Groups, historical retreat details, meal train links, Facebook group, and newsletter contact. Keep past events clearly historical; do not invent dates or issues for source items marked "Coming Soon".
 - **Long text** (statement of faith, anything over a paragraph that is not page layout): Markdown in `src/text/`, rendered with the `Markdown` component.
 - **Sermon notes**: `src/content/notes/*.md`, generated from Word files by `npm run notes`. Never hand-edit these; fix the `.docx` in `notes-inbox/` and rerun.
 - **Sermons and events**: `src/data/messages.json` and `src/data/events.json`. These are snapshots of YouTube and Church Center. Edit them only to update the snapshot.

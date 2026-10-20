@@ -175,6 +175,20 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 .kids-resources a::after { flex: none; }
 @media (min-width: 48rem) { .kids-resources { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
+/* Women's ministry: accessible schedules, leader contacts, and source event archives. */
+.women-page .split > * { min-width: 0; }
+.women-page [id] { scroll-margin-top: 6rem; }
+.women-page .page-head .btn-row { margin-top: 1.75rem; }
+.women-page .faq-band a:hover { color: var(--ink); }
+.women-page .go { min-height: 2.75rem; overflow-wrap: anywhere; }
+.women-page .go::after { flex: none; }
+.women-page .facts a { display: inline-flex; align-items: center; min-height: 2.75rem; overflow-wrap: anywhere; }
+.women-page .faq { margin-top: 1.5rem; }
+.women-page .faq dl { margin-block: 1rem; }
+.women-page .faq a { margin-bottom: 1rem; }
+.women-intro { max-width: 60ch; margin-block: 1rem 1.5rem; color: var(--ink-2); }
+.women-retreat-title { font-size: var(--step-3); }
+
 /* Load-in motion: content is visible by default; motion only adds. */
 @media (prefers-reduced-motion: no-preference) {
   .rise { animation: rise 0.9s var(--ease) both; animation-delay: calc(var(--i, 0) * 90ms); }
