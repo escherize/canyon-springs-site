@@ -24,15 +24,6 @@ function About() {
       <PageHead title="About Us" lead="Love God. Love others. Serve the world. That's our mission, and our process for making disciples: bringing everyone at Canyon Springs into a lifelong, ever-deepening relationship with Jesus Christ and with the family of God." photo="worship.jpg" alt="A Sunday service seen from the back of the room: people seated, the band and screen up front." pos="50% 55%">
         <Link className="go" to="/beliefs">Read what we believe</Link>
       </PageHead>
-      <section className="wrap section split">
-        <div><h2>What that means</h2></div>
-        <dl className="facts">
-          <div><dt>Disciple</dt><dd>Someone committed to the lordship of Christ and to His mission, being made to look like Him. <span className="refs">Matthew 4:19</span></dd></div>
-          <div><dt>Love God</dt><dd>An all-consuming, fulfilling relationship with our Creator that radiates from an overwhelming appreciation of His love. <span className="refs">Matthew 22:37–39</span></dd></div>
-          <div><dt>Love others</dt><dd>Valuing, accepting, and engaging others unselfishly, as He did. <span className="refs">John 13:34–35</span></dd></div>
-          <div><dt>Serve the world</dt><dd>Communicating the Gospel of Jesus Christ to others through selfless acts of service. <span className="refs">Matthew 5:16</span></dd></div>
-        </dl>
-      </section>
       <section className="section team-band">
         <div className="wrap">
           <h2>Our team</h2>
