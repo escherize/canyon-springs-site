@@ -1,5 +1,5 @@
 /* Canyon Springs, Sage: muted green and warm cream, gold and rust accents.
-   Fonts: Fraunces for headings, DM Sans for everything else. */
+   Typography: DM Sans throughout for clear, consistent reading. */
 
 :root {
   --charcoal: #1F2420;  /* footer */
@@ -17,9 +17,9 @@
   --error: oklch(0.45 0.18 27);
 
   --font: "DM Sans", system-ui, sans-serif;
-  --display: "Fraunces", Georgia, serif;
+  --display: var(--font);
   --heading-case: none;
-  --heading-weight: 600;
+  --heading-weight: 700;
   --heading-track: 0;
   --step--1: clamp(0.94rem, 0.9rem + 0.1vw, 1rem);
   --step-0: clamp(1.06rem, 1rem + 0.25vw, 1.19rem);

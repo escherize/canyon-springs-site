@@ -41,7 +41,7 @@ A local, family-oriented church: Sunday worship and teaching, a newborn–5th gr
 
 ## Brand Commitments
 
-Selected style: Sage, carried over from the mockup option—muted green on warm cream, gold and rust accents, Fraunces serif headings, and DM Sans body text. Use the supplied Canyon Springs horizontal logo in its original colors. The preview banner is no longer shown.
+Selected style: Sage's muted green on warm cream, with gold and rust accents. Typography is DM Sans throughout with bold headings; decorative display lettering was removed for readability. Use the supplied Canyon Springs horizontal logo in its original colors. The preview banner is no longer shown.
 
 ## Evidence on Hand
 

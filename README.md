@@ -47,7 +47,7 @@ Pushing to `main` deploys to GitHub Pages (`.github/workflows/deploy.yml`). To b
 
 The header, mobile menu, and footer use `public/logo.png`, cropped from the supplied `public/Canyon-Springs-Horizontal-Logo-Original.png` to remove its white margins. `public/logo-mark.png` is the circular mark from that same image, used as the favicon. Keep the original colors; dark surfaces give the logo a white backing.
 
-The site uses the mockup's **Sage** style: muted green and warm cream, gold and rust accents, Fraunces headings, and DM Sans body text. It is the default across every route; there is no theme selector or preview banner.
+The site uses the **Sage** palette: muted green and warm cream, with gold and rust accents. DM Sans is used throughout, including bold headings, menus, and Scripture passages, for consistent readability. Decorative display fonts are not loaded. This style applies to every route; there is no theme selector or preview banner.
 
 ## Stack
 
