@@ -58,7 +58,7 @@ export function Layout({ children }: { children: ReactNode }) {
       <header className="site-header">
         <div className="wrap bar">
           <Link className="brand" to="/" aria-label={`${church.name}, home`}>
-            <img src={asset("logo.png")} width="676" height="198" alt="" />
+            <img src={asset("logo-horizontal.png")} width="804" height="215" alt="" />
           </Link>
           <nav aria-label="Main" className="nav-desktop">
             <ul>
@@ -72,7 +72,7 @@ export function Layout({ children }: { children: ReactNode }) {
         </div>
         <nav id="menu" popover="auto" aria-label="Menu" className="menu on-dark">
           <div className="menu-top">
-            <img className="logo-panel" src={asset("logo.png")} width="676" height="198" alt={church.name} />
+            <img className="logo-panel" src={asset("logo-horizontal.png")} width="804" height="215" alt={church.name} />
             <button popoverTarget="menu" popoverTargetAction="hide" className="menu-btn" aria-label="Close menu"><Close /></button>
           </div>
           <ul>
@@ -87,7 +87,7 @@ export function Layout({ children }: { children: ReactNode }) {
       <footer className="site-footer on-dark">
         <div className="wrap foot-grid">
           <div>
-            <img className="logo-panel foot-logo" src={asset("logo.png")} width="676" height="198" alt={church.name} loading="lazy" />
+            <img className="logo-panel foot-logo" src={asset("logo-horizontal.png")} width="804" height="215" alt={church.name} loading="lazy" />
             <p className="muted">A Place to Belong • A Place to Grow • A Place to Serve</p>
           </div>
           <div>
