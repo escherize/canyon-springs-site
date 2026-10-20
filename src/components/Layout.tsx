@@ -87,7 +87,7 @@ export function Layout({ children }: { children: ReactNode }) {
       <footer className="site-footer on-dark">
         <div className="wrap foot-grid">
           <div>
-            <img className="logo-panel foot-logo" src={asset("logo-horizontal.png")} width="804" height="215" alt={church.name} loading="lazy" />
+            <img className="foot-logo" src={asset("logo-footer.png")} width="804" height="215" alt={church.name} loading="lazy" />
             <p className="muted">A Place to Belong • A Place to Grow • A Place to Serve</p>
           </div>
           <div>
