@@ -46,8 +46,8 @@ function Home() {
         </div>
         <div>
           <h2>Serve</h2>
-          <p>Garden Outreach grows and gleans food for local food banks and neighbors in need. It's run entirely by volunteers.</p>
-          <Link className="go" to="/garden">See Garden Outreach</Link>
+          <p>Explore our ministries and find a place to serve at Canyon Springs.</p>
+          <Link className="go" to="/ministries">See all ministries</Link>
         </div>
       </section>
 
