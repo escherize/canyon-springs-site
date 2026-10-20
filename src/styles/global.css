@@ -1,26 +1,26 @@
-/* Canyon Springs. Zach's brief palette: cream ground, olive/charcoal for strong sections, gold and rust as accents.
-   Fonts: Montserrat for headings, DM Sans for everything else. */
+/* Canyon Springs, Sage: muted green and warm cream, gold and rust accents.
+   Fonts: Fraunces for headings, DM Sans for everything else. */
 
 :root {
-  --charcoal: #20211E;  /* footer */
-  --olive: #303523;     /* primary: buttons, links, the Sunday panel */
-  --olive-hover: #454B33;
-  --rust: #8A4F2A;      /* accent on light */
-  --tan: #D8C8AE;
-  --tan-wash: #EAE1D1;  /* bands */
-  --gold: #B9894B;      /* accent on dark */
-  --cream: #F4EFE5;
-  --ink: #20211E;
-  --ink-2: #55574B;     /* secondary text, ~6.5:1 on cream */
-  --line: #D8C8AE;
-  --bg: #F4EFE5;
+  --charcoal: #1F2420;  /* footer */
+  --olive: #3E4A3D;     /* primary: buttons, links, the Sunday panel */
+  --olive-hover: #52604F;
+  --rust: #A3542F;      /* accent on light */
+  --tan: #CBD0C0;
+  --tan-wash: #E3E6DA;  /* bands */
+  --gold: #D4B06A;      /* accent on dark */
+  --cream: #F5F3EC;
+  --ink: #1F2420;
+  --ink-2: #51584F;     /* secondary text */
+  --line: #CBD0C0;
+  --bg: #F5F3EC;
   --error: oklch(0.45 0.18 27);
 
   --font: "DM Sans", system-ui, sans-serif;
-  --display: "Montserrat", system-ui, sans-serif;
-  --heading-case: uppercase;
-  --heading-weight: 700;
-  --heading-track: 0.02em;
+  --display: "Fraunces", Georgia, serif;
+  --heading-case: none;
+  --heading-weight: 600;
+  --heading-track: 0;
   --step--1: clamp(0.94rem, 0.9rem + 0.1vw, 1rem);
   --step-0: clamp(1.06rem, 1rem + 0.25vw, 1.19rem);
   --step-1: clamp(1.33rem, 1.2rem + 0.5vw, 1.6rem);
@@ -173,8 +173,6 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 .skip { position: absolute; left: -999px; top: 0; background: white; padding: 0.75rem 1rem; z-index: var(--z-menu); }
 .skip:focus { left: 0.5rem; top: 0.5rem; }
 
-.preview-note { background: var(--tan-wash); color: var(--ink); font-size: var(--step--1); padding-block: 0.6rem; line-height: 1.45; }
-
 .site-header { position: sticky; top: 0; z-index: var(--z-sticky); background: color-mix(in oklch, var(--bg) 94%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
 .bar { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; min-height: 4.5rem; }
 .brand { display: block; flex-shrink: 1; min-width: 0; }
@@ -257,7 +255,7 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 
 @media (max-width: 44rem) {
   .hero-photo img { min-height: 32rem; object-position: 30% 60%; }
-  .hero h1 { font-size: 1.6rem; letter-spacing: var(--heading-track); }
+  .hero h1 { font-size: 2.1rem; letter-spacing: var(--heading-track); }
   .hero-photo::after { background: linear-gradient(180deg, rgb(32 33 30 / 0.8) 0%, rgb(32 33 30 / 0.55) 100%); }
   .hero-text { padding-block: 1.5rem 2rem; }
   .hero-when { font-size: var(--step-0); margin-top: 1.1rem; }

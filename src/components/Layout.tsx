@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
-import { church, nav, footerNav, snapshot } from "../data/site";
+import { church, nav, footerNav } from "../data/site";
 import { asset } from "../lib/content";
 
 const Menu = () => (
@@ -14,12 +14,6 @@ export function Layout({ children }: { children: ReactNode }) {
   return (
     <>
       <a className="skip" href="#main">Skip to content</a>
-      <div className="preview-note">
-        <div className="wrap">
-          <strong>Preview of the new site, not the live one.</strong> Sermons and events are a snapshot of YouTube and Church Center from {snapshot}. The real site would update itself.
-        </div>
-      </div>
-
       <header className="site-header">
         <div className="wrap bar">
           <Link className="brand" to="/" aria-label={`${church.name}, home`}>

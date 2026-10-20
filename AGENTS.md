@@ -15,7 +15,7 @@ Keep content out of components. Page copy and facts belong in files that a non-p
 ## Style
 
 - All styles are in `src/styles/global.css`, as plain CSS with the tokens at the top. Do not add Tailwind, CSS-in-JS, or a component library.
-- Palette and fonts follow the brief: cream ground, olive primary, gold and rust accents, Montserrat headings, DM Sans body. Do not introduce new colors; use the tokens.
+- Palette and fonts use the selected Sage style: warm cream ground, muted green primary, gold and rust accents, Fraunces headings, DM Sans body. Do not introduce new colors; use the tokens.
 - Body text stays at least 16px. Tap targets at least 44px. Contrast AA or better.
 - Content is visible by default; animation only adds. Respect `prefers-reduced-motion`.
 

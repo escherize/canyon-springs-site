@@ -39,7 +39,7 @@ A local, family-oriented church: Sunday worship and teaching, a newborn–5th gr
 
 ## Brand Commitments
 
-Zach's brief (2026-10-13): muted olive, gold and rust on cream; Montserrat and DM Sans; the existing logo until a vector turns up. The church can veto any of it.
+Selected style: Sage, carried over from the mockup option—muted green on warm cream, gold and rust accents, Fraunces serif headings, and DM Sans body text. Use the supplied Canyon Springs horizontal logo in its original colors. The preview banner is no longer shown.
 
 ## Evidence on Hand
 
