@@ -11,7 +11,7 @@ Preview: https://escherize.com/canyon-springs-site/
 - **Prominent, left-aligned visitor information.** Hero headings, service times, address, and action labels use a larger responsive scale. The hero and closing visit buttons align with the text above; actions wrap onto left-aligned rows on narrow screens.
 - **Right-aligned navigation.** Desktop menu links sit together beside the visit button at the right of the header. The mobile menu links and service details share a right-aligned edge.
 - **Sermons from YouTube.** `src/data/messages.json` is a snapshot of the channel; the Talents entry uses [the supplied October 11 video](https://youtu.be/00mW4YF0nsc). The real site would refresh the snapshot automatically.
-- **Events from Church Center.** `src/data/events.json` is a snapshot of the public calendar. Past dates are dropped at build time, and the deploy reruns every Monday, so nothing goes stale.
+- **Events from Church Center.** `src/data/events.json` is a snapshot of the public calendar. Weekly listings cover Sunday worship, Canyon Students, and Women's Life Group. Past dates are dropped at build time, and the deploy reruns every Monday, so nothing goes stale.
 - **Sermon notes from Word files.** Drop `YYYY-MM-DD-name.docx` into `notes-inbox/` and run `npm run notes`. It writes Markdown to `src/content/notes/`, and the message page turns the blanks into fill-in fields. Underline an answer in Word (instead of typing ______) and that blank gets a hint button.
 - **Forms open an email** to the office until `formEndpoint` in `src/data/site.ts` points at a form service.
 - **Real photos only.** The church's own photos plus USDA public-domain farmland shots taken near Middleton (`public/photos/SOURCES.txt`). No stock, no AI imagery.

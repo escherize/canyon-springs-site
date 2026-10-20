@@ -13,4 +13,3 @@ serve-night https://static.wixstatic.com/media/b96b2b_7b881cf74ed5402eb4fe2691d6
 zinnias https://static.wixstatic.com/media/4f69fe_0afe73c1e6cb44bbaed0eb0ecc110651~mv2.webp (church's own, from the current site)
 christmas-play https://static.wixstatic.com/media/4f69fe_bfb0f94cfb884e718df7de6ab96a445f~mv2.jpg (church's own, from the current site)
 garden-volunteers https://static.wixstatic.com/media/4f69fe_0a8e6f84d919405b942c0465417b73dd~mv2.webp (church's own, from the current site)
-mens-breakfast https://static.wixstatic.com/media/4f69fe_fe1aa53e39b1490cad68aeef151f1347~mv2.jpg (church's own, from the current site)

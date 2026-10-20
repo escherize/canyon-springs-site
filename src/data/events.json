@@ -1,8 +1,7 @@
 {
   "weekly": [
     { "title": "Canyon Students", "when": "Wednesdays, 6:30–8:30 PM", "who": "6th–12th grade", "href": "/students" },
-    { "title": "Women's Life Group", "when": "Fridays, 10 AM–noon", "who": "Women", "href": "/women" },
-    { "title": "Men's Life Group", "when": "Saturdays, 7:30–9:30 AM", "who": "Men", "href": "/groups" }
+    { "title": "Women's Life Group", "when": "Fridays, 10 AM–noon", "who": "Women", "href": "/women" }
   ],
   "upcoming": [
     { "title": "Garden Open House", "date": "2026-10-17", "time": "10 AM–noon", "where": "Church office kitchen and garden", "href": "/garden" },

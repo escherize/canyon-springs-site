@@ -1,5 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
-import { asset } from "../lib/content";
+import { createFileRoute } from "@tanstack/react-router";
 import { PageHead } from "../components/PageHead";
 import { head } from "../lib/head";
 
@@ -19,18 +18,6 @@ export const Route = createFileRoute("/groups")({
             <a className="btn" href="https://drive.google.com/file/d/1YGMKLT0RKjscLu7Ce6n9Vm4e1c8zfreC/view?usp=sharing" rel="noopener">See the group list</a>
             <a className="btn ghost" href="mailto:office@canyonchristian.com?subject=Life%20Group%20question">Email the office</a>
           </div>
-        </div>
-      </section>
-      <section id="men" className="wrap section-tight split men">
-        <img src={asset("photos/mens-breakfast.jpg")} width="1067" height="1600" alt="Men serving breakfast from slow cookers at the monthly men's breakfast." loading="lazy" />
-        <div className="stack">
-          <h2>Men</h2>
-          <p>Through Bible studies and special events, the men at Canyon Springs aim to support each other.</p>
-          <dl className="facts">
-            <div><dt>Men's Life Group</dt><dd>Saturdays, 7:30–9:30 AM</dd></div>
-            <div><dt>Men's breakfast</dt><dd>Monthly: fresh food, study, and fellowship. Watch the <Link to="/events">events page</Link>.</dd></div>
-          </dl>
-          <p><a href="mailto:men@canyonchristian.com">men@canyonchristian.com</a></p>
         </div>
       </section>
     </>

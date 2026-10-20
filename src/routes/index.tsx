@@ -98,7 +98,6 @@ function Home() {
           <Link className="min" to="/students"><span className="min-name">Students</span><span className="min-detail">6th–12th grade · Sundays 10:30, Wednesdays 6:30 PM</span></Link>
           <Link className="min" to="/groups"><span className="min-name">Life Groups</span><span className="min-detail">Small groups that meet weekly</span></Link>
           <Link className="min" to="/women"><span className="min-name">Women</span><span className="min-detail">Bible studies, retreats and a Friday morning group</span></Link>
-          <Link className="min" to="/groups" hash="men"><span className="min-name">Men</span><span className="min-detail">Saturday morning group and a monthly breakfast</span></Link>
           <Link className="min" to="/garden"><span className="min-name">Garden Outreach</span><span className="min-detail">Gardening, teaching, and sharing the harvest</span></Link>
         </div>
       </section>
