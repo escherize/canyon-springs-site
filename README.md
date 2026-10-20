@@ -8,6 +8,7 @@ Preview: https://escherize.com/canyon-springs-site/
 
 - **Answers "when, where, kids" first.** Service times and the address sit under the homepage headline, so a phone sees them without scrolling. The Plan Your Visit page covers what to expect, how long it runs, what to wear, parking, kids check-in, and a "we're coming" form.
 - **Screen-filling homepage photo.** The hero fills the visible viewport below the 4.5rem header and its 1px border, on desktop and phones. Dynamic viewport sizing follows mobile browser controls; the section can grow if its text and buttons need more space. Belong / Grow / Serve follows directly below it, with no separate Sunday information box.
+- **Prominent, left-aligned visitor information.** Hero headings, service times, address, and action labels use a larger responsive scale. The hero and closing visit buttons align with the text above; actions wrap onto left-aligned rows on narrow screens.
 - **Sermons from YouTube.** `src/data/messages.json` is a snapshot of the channel. The real site would refresh it automatically.
 - **Events from Church Center.** `src/data/events.json` is a snapshot of the public calendar. Past dates are dropped at build time, and the deploy reruns every Monday, so nothing goes stale.
 - **Sermon notes from Word files.** Drop `YYYY-MM-DD-name.docx` into `notes-inbox/` and run `npm run notes`. It writes Markdown to `src/content/notes/`, and the message page turns the blanks into fill-in fields. Underline an answer in Word (instead of typing ______) and that blank gets a hint button.
