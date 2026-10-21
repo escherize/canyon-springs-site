@@ -54,3 +54,5 @@ The site uses the **Sage** palette: muted green and warm cream, with gold and ru
 ## Stack
 
 Vite, React 19, TanStack Start with every route prerendered to HTML (`vite.config.ts`). No server. Content is Markdown and JSON in the repo, loaded at build time. react-markdown renders the Markdown; `src/lib/rehype-blanks.ts` turns `{{blank:answer}}` into fill-in fields.
+
+For navigation changes, check the mobile Ministries submenu with touch input in WebKit/Safari and Chromium, not just a narrow desktop viewport: each of All ministries, Students, Kids, Life Groups, Women, and Garden must load its page and close the menu. Also check desktop selection, Escape, and focus moving outside the dropdown. In `NavigationItems`, do not dismiss on a blur with no `relatedTarget`: mobile Safari emits that before a tapped link's click, so closing the disclosure there cancels navigation.

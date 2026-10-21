@@ -22,7 +22,8 @@ function NavigationItems() {
         <details
           className="nav-group"
           onBlur={(event) => {
-            if (!event.currentTarget.contains(event.relatedTarget)) event.currentTarget.open = false;
+            // Touch Safari can blur without focusing the tapped link; let its click finish.
+            if (event.relatedTarget && !event.currentTarget.contains(event.relatedTarget)) event.currentTarget.open = false;
           }}
           onKeyDown={(event) => {
             if (event.key === "Escape" && event.currentTarget.open) {
