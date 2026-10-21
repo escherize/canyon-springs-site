@@ -1,22 +1,13 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHead } from "../components/PageHead";
 import { head } from "../lib/head";
+import { team } from "../data/site";
+import { asset } from "../lib/content";
 
 export const Route = createFileRoute("/about")({
   head: () => head("About Us", "Love God, love others, serve the world. Learn about Canyon Springs and meet our team."),
   component: About,
 });
-
-const team = [
-  ["Ben Williams", "Senior Pastor", "Ben@canyonchristian.com"],
-  ["Connor Hill", "Students Minister", "Connor@canyonchristian.com"],
-  ["Jamie Hart", "Children's Ministry Director", "Kids@canyonchristian.com"],
-  ["Steve Alderete", "Worship Minister", "Steve@canyonchristian.com"],
-  ["Tana Lyle", "Bookkeeper", "Canyonspringsfinance@gmail.com"],
-  ["Zach Hart", "Elder", "Zach@canyonchristian.com"],
-  ["Traber Cass", "Elder", "Traber@canyonchristian.com"],
-  ["Jason Hill", "Elder", "Jason@canyonchristian.com"],
-];
 
 function About() {
   return (
@@ -28,8 +19,13 @@ function About() {
         <div className="wrap">
           <h2>Our team</h2>
           <ul className="team">
-            {team.map(([name, role, email]) => (
-              <li key={email}><strong>{name}</strong><span className="muted">{role}</span><a href={`mailto:${email}`}>{email}</a></li>
+            {team.map(({ name, role, email, photo }) => (
+              <li key={email}>
+                <img src={asset(`photos/${photo}`)} width="512" height="512" alt={name} loading="lazy" decoding="async" />
+                <strong>{name}</strong>
+                <span className="muted">{role}</span>
+                <a href={`mailto:${email}`}>{email}</a>
+              </li>
             ))}
           </ul>
         </div>

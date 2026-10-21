@@ -437,8 +437,9 @@ a.tt-what:hover { text-decoration: underline; }
 .faq-band { background: var(--tan-wash); }
 .team-band { background: var(--tan-wash); }
 .team-band h2 { margin-bottom: 2rem; }
-.team { list-style: none; padding: 0; margin: 0; display: grid; gap: 0 2rem; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); }
-.team li { display: grid; gap: 0.1rem; padding: 1rem 0; border-top: 2px solid var(--ink); }
+.team { list-style: none; padding: 0; margin: 0; display: grid; gap: 2rem; grid-template-columns: repeat(auto-fill, minmax(min(16rem, 100%), 1fr)); }
+.team li { display: grid; align-content: start; gap: 0.25rem; min-width: 0; }
+.team img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; margin-bottom: 0.75rem; }
 .team strong { font-size: var(--step-1); }
 .team a { font-size: var(--step--1); overflow-wrap: anywhere; min-height: 2.75rem; display: inline-flex; align-items: center; }
 .beliefs h3 { font-size: var(--step-1); margin-top: 2rem; }

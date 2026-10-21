@@ -36,6 +36,7 @@ Pushing to `main` deploys to GitHub Pages (`.github/workflows/deploy.yml`). To b
 | What | Where |
 |---|---|
 | Church facts: address, times, links, nav | `src/data/site.ts` |
+| About Us team names, roles, emails, and portrait filenames | `team` in `src/data/site.ts`; optimized photos in `public/photos/`, originals recorded in `public/photos/SOURCES.txt` |
 | Canyon Kids mission, values, goals, FAQ, and resource links | `src/data/kids.ts` |
 | Women's ministry gatherings, Life Groups, retreat, and resource links | `src/data/women.ts` |
 | Statement of faith for `/beliefs` | `src/text/beliefs.md` |

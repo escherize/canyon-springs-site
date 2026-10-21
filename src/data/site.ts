@@ -21,6 +21,18 @@ export const church = {
   formEndpoint: "",
 };
 
+// Team and photos from https://www.canyonspringschristian.com/about-1.
+export const team = [
+  { name: "Ben Williams", role: "Senior Pastor", email: "Ben@canyonchristian.com", photo: "ben-williams.webp" },
+  { name: "Connor Hill", role: "Students Minister", email: "Connor@canyonchristian.com", photo: "connor-hill.webp" },
+  { name: "Jamie Hart", role: "Children's Ministry Director", email: "Kids@canyonchristian.com", photo: "jamie-hart.webp" },
+  { name: "Steve Alderete", role: "Worship Minister", email: "Steve@canyonchristian.com", photo: "steve-alderete.webp" },
+  { name: "Tana Lyle", role: "Bookkeeper", email: "Canyonspringsfinance@gmail.com", photo: "tana-lyle.webp" },
+  { name: "Zach Hart", role: "Elder", email: "Zach@canyonchristian.com", photo: "zach-hart.webp" },
+  { name: "Traber Cass", role: "Elder", email: "Traber@canyonchristian.com", photo: "traber-cass.webp" },
+  { name: "Jason Hill", role: "Elder", email: "Jason@canyonchristian.com", photo: "jason-hill.webp" },
+];
+
 // When the snapshot of YouTube and Church Center was taken.
 export const snapshot = "October 14, 2026";
 
