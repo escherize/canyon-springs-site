@@ -12,7 +12,7 @@ function Students() {
   const mine = events.upcoming.filter((e) => e.href === "/students");
   return (
     <>
-      <PageHead title="Canyon Students" lead="A place for middle and high school students to know Jesus more and follow Him better." photo="serve-night.jpg" alt="A big group of students and adults at the community garden behind a Canyon Springs Garden Outreach banner." pos="50% 45%" />
+      <PageHead title="Canyon Students" lead="A place for middle and high school students to know Jesus more and follow Him better." photo="students-nerf-night.webp" alt="Canyon Students gathered in the church lobby with colorful toy blasters for a Nerf night." pos="50% 40%" />
       <section className="wrap section split">
         <div>
           <h2>When we meet</h2>
