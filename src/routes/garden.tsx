@@ -12,7 +12,7 @@ function Garden() {
   const mine = events.upcoming.filter((e) => e.href === "/garden");
   return (
     <>
-      <PageHead title="Garden Outreach" lead="Growing together to build community through gardening, teaching, and sharing the harvest. We're a 100% volunteer non-profit farm and garden." photo="garden-volunteers.jpg" alt="Garden volunteers, adults and kids, holding fresh produce at the garden." pos="50% 40%" />
+      <PageHead title="Garden Outreach" lead="Growing together to build community through gardening, teaching, and sharing the harvest. We're a 100% volunteer non-profit farm and garden." photo="garden-entrance.webp" alt="The Canyon Springs Garden Outreach entrance with a market stand, flowers, and a turquoise garden sign." />
       <section className="wrap section split">
         <div><h2>What we do</h2></div>
         <ul className="dolist">

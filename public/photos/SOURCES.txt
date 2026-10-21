@@ -21,3 +21,4 @@ traber-cass https://static.wixstatic.com/media/787eb6_bfcc4eab5ba34958b811f93365
 jason-hill https://static.wixstatic.com/media/787eb6_a2ea87f1371a418c9bb7f4fb1fc23a76~mv2.jpg (church's own, matched to Jason Hill on https://www.canyonspringschristian.com/about-1)
 students-nerf-night https://github.com/escherize/canyon_springs/blob/main/IMG_3159.jpeg (church's own, supplied for the Students page; oriented and resized to 1920 × 1440 WebP)
 kids-group https://github.com/escherize/canyon_springs/blob/main/raw/IMG_4662.jpeg (church's own, supplied for the Kids page; oriented and resized to 1920 × 1440 WebP)
+garden-entrance https://github.com/escherize/canyon_springs/blob/main/raw/IMG_3281.jpeg (church's own, supplied for the Garden page; oriented and resized to 1920 × 1440 WebP)
