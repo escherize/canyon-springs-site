@@ -67,6 +67,7 @@ export function Layout({ children }: { children: ReactNode }) {
           </nav>
           <div className="bar-actions">
             <Link className="btn" to="/visit">Plan a visit</Link>
+            <Link className="btn ghost" to="/give">Give Online</Link>
             <button className="menu-btn" popoverTarget="menu" aria-label="Open menu"><Menu /></button>
           </div>
         </div>
