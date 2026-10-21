@@ -33,6 +33,7 @@ A local, family-oriented church: Sunday worship and teaching, a newborn–5th gr
 
 - Main pages: Home, About Us, Ministries, Watch, and Contact. Ministries groups Students, Kids, Life Groups, Women, and Garden; each retains its existing URL, with an overview at `/ministries`. Events, giving, and visit information remain secondary destinations.
 - What we believe is a standalone page at `/beliefs`, linked from About Us and Plan a Visit without a main-menu item. About Us currently keeps the brief mission introduction, beliefs link, worship photo, and team; the expanded "What that means" definitions and full statement of faith are not shown there.
+- About Us lists the elders after the staff in this order: Traber Cass, Jason Hill, Zach Hart.
 - The Life Groups page opens its shared Google Drive group list in a new tab, leaving the church page open.
 - The shared header pairs Plan a visit with Give Online. Give Online currently opens the existing `/give` page; its platform destination remains `church.giveUrl` in `src/data/site.ts`. On narrow screens the two buttons share a row below the logo and menu control, with the hero height and ministry anchor offsets adjusted for the taller header.
 

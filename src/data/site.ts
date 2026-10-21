@@ -28,9 +28,9 @@ export const team = [
   { name: "Jamie Hart", role: "Children's Ministry Director", email: "Kids@canyonchristian.com", photo: "jamie-hart.webp" },
   { name: "Steve Alderete", role: "Worship Minister", email: "Steve@canyonchristian.com", photo: "steve-alderete.webp" },
   { name: "Tana Lyle", role: "Bookkeeper", email: "Canyonspringsfinance@gmail.com", photo: "tana-lyle.webp" },
-  { name: "Zach Hart", role: "Elder", email: "Zach@canyonchristian.com", photo: "zach-hart.webp" },
   { name: "Traber Cass", role: "Elder", email: "Traber@canyonchristian.com", photo: "traber-cass.webp" },
   { name: "Jason Hill", role: "Elder", email: "Jason@canyonchristian.com", photo: "jason-hill.webp" },
+  { name: "Zach Hart", role: "Elder", email: "Zach@canyonchristian.com", photo: "zach-hart.webp" },
 ];
 
 // When the snapshot of YouTube and Church Center was taken.
