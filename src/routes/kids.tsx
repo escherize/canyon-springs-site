@@ -12,7 +12,7 @@ export const Route = createFileRoute("/kids")({
 function Kids() {
   return (
     <div className="kids-page">
-      <PageHead title="Canyon Kids" lead={`${kids.ages}, at both Sunday services.`} photo="christmas-play.jpg" alt="Kids in costume with hands raised at a Christmas play rehearsal." pos="50% 35%">
+      <PageHead title="Canyon Kids" lead={`${kids.ages}, at both Sunday services.`} photo="kids-group.webp" alt="Children and adults posing together in a room with tall windows and wooden beams." pos="50% 60%">
         <p className="kids-service"><strong>Sundays at {church.services.join(" & ")} AM</strong></p>
         <div className="btn-row">
           <a className="btn" href="#kids-faq">First-time families</a>

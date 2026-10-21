@@ -10,7 +10,6 @@ worship https://static.wixstatic.com/media/4f69fe_9bc45e16e6234a179f31dcf43ca4f8
 lobby https://static.wixstatic.com/media/4f69fe_c272938a55be4f8f8183ab4d5f499f71~mv2.png (church's own, from the current site)
 kids-class https://static.wixstatic.com/media/4f69fe_808f325954f2437a87c48c8b9c796843~mv2.png (church's own, from the current site)
 zinnias https://static.wixstatic.com/media/4f69fe_0afe73c1e6cb44bbaed0eb0ecc110651~mv2.webp (church's own, from the current site)
-christmas-play https://static.wixstatic.com/media/4f69fe_bfb0f94cfb884e718df7de6ab96a445f~mv2.jpg (church's own, from the current site)
 garden-volunteers https://static.wixstatic.com/media/4f69fe_0a8e6f84d919405b942c0465417b73dd~mv2.webp (church's own, from the current site)
 ben-williams https://static.wixstatic.com/media/4f69fe_7e6bdf51d06040b3a0c503c955b67dc5~mv2.jpg (church's own, matched to Ben Williams on https://www.canyonspringschristian.com/about-1)
 connor-hill https://static.wixstatic.com/media/4f69fe_2655ee94c445444b99e2d09ba4f08817~mv2.jpeg (church's own, matched to Connor Hill on https://www.canyonspringschristian.com/about-1)
@@ -21,3 +20,4 @@ zach-hart https://static.wixstatic.com/media/4f69fe_77774ab12b394e75aa35e1f697fc
 traber-cass https://static.wixstatic.com/media/787eb6_bfcc4eab5ba34958b811f93365bdd27c~mv2.jpg (church's own, matched to Traber Cass on https://www.canyonspringschristian.com/about-1)
 jason-hill https://static.wixstatic.com/media/787eb6_a2ea87f1371a418c9bb7f4fb1fc23a76~mv2.jpg (church's own, matched to Jason Hill on https://www.canyonspringschristian.com/about-1)
 students-nerf-night https://github.com/escherize/canyon_springs/blob/main/IMG_3159.jpeg (church's own, supplied for the Students page; oriented and resized to 1920 × 1440 WebP)
+kids-group https://github.com/escherize/canyon_springs/blob/main/raw/IMG_4662.jpeg (church's own, supplied for the Kids page; oriented and resized to 1920 × 1440 WebP)
