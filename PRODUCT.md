@@ -50,7 +50,7 @@ Selected style: Sage's muted green on warm cream, with gold and rust accents. Ty
 ## Evidence on Hand
 
 - Research on church websites, October 2026: `~/dv/church_website/research-church-websites-2026-10-18.md`. Findings: service times, address and one Plan Your Visit button above the fold; a dedicated visit page with what to expect, parking, kids and a form; real photos only; automate what goes stale.
-- The church's own photos from the current site, and USDA public-domain farmland photos taken near Middleton. No stock, no AI imagery.
+- The church's own photos from the current site and USDA public-domain farmland photos taken near Middleton remain the default. The homepage now uses the user's explicitly selected golden-hour panorama, `wide_scenic_landscape_at_golden_hour_a_panoramic.png`; its geographic location and creation method are unverified. Other stock or generated imagery still requires an explicit user request.
 
 ## Product Principles
 

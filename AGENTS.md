@@ -13,7 +13,7 @@ Keep content out of components. Page copy and facts belong in files that a non-p
 - **Long text** (statement of faith, anything over a paragraph that is not page layout): Markdown in `src/text/`, rendered with the `Markdown` component.
 - **Sermon notes**: `src/content/notes/*.md`, generated from Word files by `npm run notes`. Never hand-edit these; fix the `.docx` in `notes-inbox/` and rerun.
 - **Sermons and events**: `src/data/messages.json` and `src/data/events.json`. These are snapshots of YouTube and Church Center. Edit them only to update the snapshot.
-- **Photos**: `public/photos/`, with the source of each listed in `public/photos/SOURCES.txt`. Only the church's own photos or public-domain shots of the area. No stock photos, no AI-generated images.
+- **Photos**: `public/photos/`, with each source listed in `public/photos/SOURCES.txt`. Default to the church's own photos or public-domain shots of the area; do not introduce stock or generated imagery without an explicit user request. The current homepage panorama was explicitly supplied and selected by the user. Its geographic location and creation method are unverified; do not label it a documentary photograph of the Payette River Valley.
 
 ## Style
 

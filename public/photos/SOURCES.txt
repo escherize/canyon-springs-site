@@ -1,4 +1,4 @@
-wheat-pivot https://upload.wikimedia.org/wikipedia/commons/f/ff/Irrigation_and_Water_%2820260611-NRCS-KLS-0015%29.jpg
+golden-landscape https://github.com/escherize/canyon_springs/blob/main/raw/wide_scenic_landscape_at_golden_hour_a_panoramic.png (user-selected homepage panorama; resized to 1200 × 400 and 2172 × 724 WebP; geographic location and creation method not independently verified)
 rows-horizon https://upload.wikimedia.org/wikipedia/commons/5/57/NRCS_EQIP-_Irrigation_Pivot_in_Middleton%2C_Idaho_%2820260611-NRCS-KLS-0041%29.jpg
 corn-tractor https://upload.wikimedia.org/wikipedia/commons/a/ae/Farm_Equipment-Machinery-_Old_and_New_%2820260611-NRCS-KLS-0036%29.jpg
 pivot-sky https://upload.wikimedia.org/wikipedia/commons/c/cd/Irrigation_and_Water_%2820260611-NRCS-KLS-0003%29.jpg

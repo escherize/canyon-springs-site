@@ -13,7 +13,7 @@ function Home() {
       <section className="hero">
         <div className="hero-stage">
           <figure className="hero-photo">
-            <img src={asset("photos/wheat-pivot-2400.jpg")} srcSet={`${asset("photos/wheat-pivot-1200.jpg")} 1200w, ${asset("photos/wheat-pivot-2400.jpg")} 2400w`} sizes="100vw" width="2400" height="1600" alt="Ripe wheat in the foreground, an irrigation pivot watering a green field behind it." fetchPriority="high" />
+            <img src={asset("photos/golden-landscape-2172.webp")} srcSet={`${asset("photos/golden-landscape-1200.webp")} 1200w, ${asset("photos/golden-landscape-2172.webp")} 2172w`} sizes="max(100vw, 300dvh)" width="2172" height="724" alt="Golden grain fields beside a winding river, with rocky cliffs and hills in the evening light." fetchPriority="high" />
           </figure>
           <div className="wrap hero-text">
             <h1>
