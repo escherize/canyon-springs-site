@@ -33,13 +33,13 @@ function Message() {
           <div className="stack">
             <h2>Sermon notes</h2>
             <p className="muted">Open the fill-in notes separately and keep this video playing as you listen.</p>
-            <p><Link className="btn ghost" to="/notes/$date" params={{ date: m.date }} target="_blank" rel="noopener">Sermon notes (new tab)</Link></p>
+            <p><Link className="btn ghost" to="/notes/$date" params={{ date: m.date }} target="_blank" rel="noopener" aria-label="Sermon notes (opens in a new tab)">Sermon notes</Link></p>
           </div>
         ) : (
           <div className="notes empty">
             <h2>Sermon notes</h2>
             <p className="muted">
-              Notes are up for {withNotes.map((x, i) => <span key={x.date}>{i > 0 && " and "}<Link to="/notes/$date" params={{ date: x.date }} target="_blank" rel="noopener">{x.title} notes (new tab)</Link></span>)}. Every week's notes show up here as soon as the office uploads the Word file.
+              Notes are up for {withNotes.map((x, i) => <span key={x.date}>{i > 0 && " and "}<Link to="/notes/$date" params={{ date: x.date }} target="_blank" rel="noopener" aria-label={`${x.title} notes (opens in a new tab)`}>{x.title} notes</Link></span>)}. Every week's notes show up here as soon as the office uploads the Word file.
             </p>
           </div>
         )}

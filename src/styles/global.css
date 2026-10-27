@@ -368,6 +368,8 @@ a.tt-what:hover { text-decoration: underline; }
 .msg-head .lead { margin-top: 0.75rem; }
 .video { position: relative; aspect-ratio: 16 / 9; background: var(--charcoal); border-radius: var(--radius); overflow: hidden; }
 .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.notes-wrap { text-align: center; }
+.notes-wrap .notes { margin-inline: auto; }
 .notes { max-width: 46rem; }
 .notes-head { margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 2px solid var(--ink); }
 .notes-head h2 { font-size: var(--step-2); margin-bottom: 0.4rem; }
