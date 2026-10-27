@@ -51,18 +51,18 @@ function Home() {
         </div>
       </section>
 
-      <div className="strip">
-        <img src={asset("photos/lobby.jpg")} width="1600" height="1066" alt="People catching up in the church lobby after a Sunday service." loading="lazy" />
-        <img src={asset("photos/kids-class.jpg")} width="1600" height="1200" alt="Kids smiling at a craft table in a Canyon Kids classroom." loading="lazy" />
-        <img src={asset("photos/garden-volunteers.jpg")} width="866" height="650" alt="Garden Outreach volunteers, adults and kids, at the community garden." loading="lazy" />
-      </div>
-
       <section className="section-tight latest-band" aria-labelledby="latest-h">
         <div className="wrap">
           <h2 id="latest-h" className="band-h">Last Sunday</h2>
           <Sermon message={latest} />
         </div>
       </section>
+
+      <div className="strip">
+        <img src={asset("photos/lobby.jpg")} width="1600" height="1066" alt="People catching up in the church lobby after a Sunday service." loading="lazy" />
+        <img src={asset("photos/kids-class.jpg")} width="1600" height="1200" alt="Kids smiling at a craft table in a Canyon Kids classroom." loading="lazy" />
+        <img src={asset("photos/garden-volunteers.jpg")} width="866" height="650" alt="Garden Outreach volunteers, adults and kids, at the community garden." loading="lazy" />
+      </div>
 
       <section className="section wrap week" aria-labelledby="week-h">
         <div className="week-head">
