@@ -12,7 +12,7 @@ export const Route = createFileRoute("/about")({
 function About() {
   return (
     <>
-      <PageHead title="About Us" lead="Love God. Love others. Serve the world. That's our mission, and our process for making disciples: bringing everyone at Canyon Springs into a lifelong, ever-deepening relationship with Jesus Christ and with the family of God." photo="worship.jpg" alt="A Sunday service seen from the back of the room: people seated, the band and screen up front." pos="50% 55%">
+      <PageHead title="About Us" lead="Love God. Love others. Serve the world. That's our mission, and our process for making disciples: bringing everyone at Canyon Springs into a lifelong, ever-deepening relationship with Jesus Christ and with the family of God." photo="warm-worship.webp" alt="Adults standing in worship while children gather near the front of a church." pos="50% 20%">
         <Link className="go" to="/beliefs">Read what we believe</Link>
       </PageHead>
       <section className="section team-band">
