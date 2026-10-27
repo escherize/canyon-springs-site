@@ -15,7 +15,7 @@ function Blank(props: Record<string, unknown>) {
 
   useEffect(() => {
     try {
-      const saved = JSON.parse(localStorage.getItem(key) || "{}");
+      const saved = JSON.parse(localStorage.getItem(key) || localStorage.getItem(`${key}/`) || "{}");
       if (saved[n]) setValue(saved[n]);
     } catch {}
   }, [key, n]);
@@ -23,7 +23,7 @@ function Blank(props: Record<string, unknown>) {
   const onChange = (v: string) => {
     setValue(v);
     try {
-      const saved = JSON.parse(localStorage.getItem(key) || "{}");
+      const saved = JSON.parse(localStorage.getItem(key) || localStorage.getItem(`${key}/`) || "{}");
       saved[n] = v;
       localStorage.setItem(key, JSON.stringify(saved));
     } catch {}
@@ -57,7 +57,7 @@ export function Notes({ note }: { note: Note }) {
         <p className="muted small">Fill in the blanks as you listen. Stuck? Tap <span className="hint-demo" aria-hidden="true">?</span> once for the first letters, twice for the answer. Your answers stay on this device.</p>
       </div>
       <div className="notes-body prose">
-        {/* Keep the original sermon URL as the storage key so existing answers remain available. */}
+        {/* Keep original sermon storage keys; reads also preserve GitHub Pages' trailing-slash URLs. */}
         <NotesStorageKey value={`notes:${asset(`watch/${note.date}`)}`}>
           <ReactMarkdown rehypePlugins={[rehypeBlanks]} components={{ blank: Blank } as never}>{note.body}</ReactMarkdown>
         </NotesStorageKey>
