@@ -17,7 +17,7 @@ export const church = {
   instagram: "https://www.instagram.com/canyonspringschristian/",
   appStore: "https://apps.apple.com/us/app/canyon-springs-christian/id1061796986",
   playStore: "https://play.google.com/store/apps/details?id=com.echurchapps.canyonsprings",
-  // Where the "we're coming" and change-request forms post. Empty means the form opens an email instead.
+  // Where the contact, "we're coming", and change-request forms post. Empty opens an email draft instead.
   formEndpoint: "",
 };
 

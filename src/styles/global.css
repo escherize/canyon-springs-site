@@ -444,6 +444,8 @@ a.tt-what:hover { text-decoration: underline; }
 .beliefs h3 { font-size: var(--step-1); margin-top: 2rem; }
 .give-row { margin-top: 1.75rem; }
 .map { width: 100%; aspect-ratio: 4 / 3; border: 0; border-radius: var(--radius); background: var(--tan-wash); }
+.contact-layout > *, .contact-layout .field { min-width: 0; }
+.contact-layout textarea { resize: vertical; }
 
 /* ---------- Forms ---------- */
 aside ul { padding-left: 1.1em; margin: 0 0 1rem; }
