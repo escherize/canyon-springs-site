@@ -446,6 +446,16 @@ a.tt-what:hover { text-decoration: underline; }
 .map { width: 100%; aspect-ratio: 4 / 3; border: 0; border-radius: var(--radius); background: var(--tan-wash); }
 .contact-layout > *, .contact-layout .field { min-width: 0; }
 .contact-layout textarea { resize: vertical; }
+.contact-layout .req { max-width: none; }
+@media (min-width: 56rem) {
+  /* Share heading/help rows so the form and office details start together without fixed offsets. */
+  .contact-layout { row-gap: 1rem; }
+  .contact-layout > .stack { display: grid; grid-template-rows: subgrid; grid-row: span 3; }
+  .contact-layout > .stack > * { margin-top: 0; }
+  .contact-details { grid-row: 3; }
+  .contact-details .facts { border-top: 0; }
+  .contact-details .facts > div:first-child { padding-top: 0; }
+}
 
 /* ---------- Forms ---------- */
 aside ul { padding-left: 1.1em; margin: 0 0 1rem; }

@@ -46,13 +46,16 @@ export const Route = createFileRoute("/contact")({
           </Form>
         </div>
         <div className="stack">
-          <dl className="facts">
-            <div><dt>Call</dt><dd><a href={church.phoneHref}>{church.phone}</a></dd></div>
-            <div><dt>Email</dt><dd><a href={`mailto:${church.email}`}>{church.email}</a></dd></div>
-            <div><dt>Visit</dt><dd>{church.street}<br />{church.city}<br /><a href={church.mapUrl} rel="noopener">Get directions</a></dd></div>
-            <div><dt>Follow</dt><dd><a href={church.facebook} rel="noopener">Facebook</a> · <a href={church.instagram} rel="noopener">Instagram</a> · <a href={church.youtube} rel="noopener">YouTube</a></dd></div>
-          </dl>
-          <iframe className="map" title="Map to Canyon Springs Christian Church" loading="lazy" src="https://maps.google.com/maps?q=1444+Cornell+St+Middleton+ID+83644&z=15&output=embed" />
+          <h2>Contact details</h2>
+          <div className="stack contact-details">
+            <dl className="facts">
+              <div><dt>Call</dt><dd><a href={church.phoneHref}>{church.phone}</a></dd></div>
+              <div><dt>Email</dt><dd><a href={`mailto:${church.email}`}>{church.email}</a></dd></div>
+              <div><dt>Visit</dt><dd>{church.street}<br />{church.city}<br /><a href={church.mapUrl} rel="noopener">Get directions</a></dd></div>
+              <div><dt>Follow</dt><dd><a href={church.facebook} rel="noopener">Facebook</a> · <a href={church.instagram} rel="noopener">Instagram</a> · <a href={church.youtube} rel="noopener">YouTube</a></dd></div>
+            </dl>
+            <iframe className="map" title="Map to Canyon Springs Christian Church" loading="lazy" src="https://maps.google.com/maps?q=1444+Cornell+St+Middleton+ID+83644&z=15&output=embed" />
+          </div>
         </div>
       </section>
     </>
