@@ -1,13 +1,15 @@
 // Fill-in-the-blank sermon notes. Answers are saved on this device; hints reveal first letters, then the answer.
-import { useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import { rehypeBlanks } from "../lib/rehype-blanks";
-import type { Note } from "../lib/content";
+import { asset, type Note } from "../lib/content";
+
+const NotesStorageKey = createContext("notes");
 
 function Blank(props: Record<string, unknown>) {
   const n = String(props["data-n"] ?? props.dataN ?? "");
   const answer = String(props["data-answer"] ?? props.dataAnswer ?? "");
-  const key = typeof location !== "undefined" ? `notes:${location.pathname}` : "notes";
+  const key = useContext(NotesStorageKey);
   const [value, setValue] = useState("");
   const [step, setStep] = useState(0);
 
@@ -55,7 +57,10 @@ export function Notes({ note }: { note: Note }) {
         <p className="muted small">Fill in the blanks as you listen. Stuck? Tap <span className="hint-demo" aria-hidden="true">?</span> once for the first letters, twice for the answer. Your answers stay on this device.</p>
       </div>
       <div className="notes-body prose">
-        <ReactMarkdown rehypePlugins={[rehypeBlanks]} components={{ blank: Blank } as never}>{note.body}</ReactMarkdown>
+        {/* Keep the original sermon URL as the storage key so existing answers remain available. */}
+        <NotesStorageKey value={`notes:${asset(`watch/${note.date}`)}`}>
+          <ReactMarkdown rehypePlugins={[rehypeBlanks]} components={{ blank: Blank } as never}>{note.body}</ReactMarkdown>
+        </NotesStorageKey>
       </div>
       <p className="small muted converted">This page was made automatically from the Word file the office already writes ({note.source}). No retyping.</p>
     </div>

@@ -16,7 +16,7 @@ export function Sermon({ message: m }: { message: Message }) {
         <p className="muted">{m.scripture}</p>
         <div className="btn-row">
           <Link className="btn" to="/watch/$date" params={{ date: m.date }}>Watch</Link>
-          {hasNotes && <Link className="btn ghost" to="/watch/$date" params={{ date: m.date }} hash="notes">Fill in the notes</Link>}
+          {hasNotes && <Link className="btn ghost" to="/notes/$date" params={{ date: m.date }} target="_blank" rel="noopener">Sermon notes (new tab)</Link>}
         </div>
       </div>
     </article>
