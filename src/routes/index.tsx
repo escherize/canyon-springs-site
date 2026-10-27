@@ -67,7 +67,6 @@ function Home() {
       <section className="section wrap week" aria-labelledby="week-h">
         <div className="week-head">
           <h2 id="week-h">Coming up</h2>
-          <p className="muted">Straight from the church calendar, so it's never out of date.</p>
         </div>
         <div className="week-cols">
           <div>
