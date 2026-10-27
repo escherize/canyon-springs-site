@@ -1,6 +1,6 @@
 import type { MouseEvent, ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
-import { church, nav, footerNav } from "../data/site";
+import { church, nav } from "../data/site";
 import { asset } from "../lib/content";
 
 const Menu = () => (
@@ -88,16 +88,16 @@ export function Layout({ children }: { children: ReactNode }) {
 
       <footer className="site-footer on-dark">
         <div className="wrap foot-grid">
-          <div>
-            <img className="foot-logo" src={asset("logo-footer.png")} width="804" height="215" alt={church.name} loading="lazy" />
-            <p className="muted">A Place to Belong • A Place to Grow • A Place to Serve</p>
-          </div>
-          <div>
+          <div className="foot-sundays">
             <h2 className="foot-h">Sundays</h2>
             <p>{church.services.join(" & ")} AM<br />Kids programs at both</p>
             <p><a href={church.mapUrl} rel="noopener">{church.street}<br />{church.city}</a></p>
           </div>
-          <div>
+          <div className="foot-brand">
+            <img className="foot-logo" src={asset("logo-footer.png")} width="804" height="215" alt={church.name} loading="lazy" />
+            <p className="muted">A Place to Belong • A Place to Grow • A Place to Serve</p>
+          </div>
+          <div className="foot-contact">
             <h2 className="foot-h">Reach us</h2>
             <p><a href={church.phoneHref}>{church.phone}</a><br /><a href={`mailto:${church.email}`}>{church.email}</a></p>
             <p className="socials">
@@ -105,12 +105,6 @@ export function Layout({ children }: { children: ReactNode }) {
               <a href={church.instagram} rel="noopener">Instagram</a>
               <a href={church.youtube} rel="noopener">YouTube</a>
             </p>
-          </div>
-          <div>
-            <h2 className="foot-h">More</h2>
-            <ul className="foot-links">
-              {footerNav.map((l) => <li key={l.label}><Link to={l.to}>{l.label}</Link></li>)}
-            </ul>
           </div>
         </div>
         <div className="wrap foot-base small">

@@ -52,11 +52,3 @@ export const nav = [
   { label: "Contact", to: "/contact" },
 ] as const;
 
-export const footerNav = [
-  { label: "Women's ministry", to: "/women" },
-  { label: "Garden outreach", to: "/garden" },
-  { label: "What we believe", to: "/beliefs" },
-  { label: "Contact", to: "/contact" },
-  { label: "Give", to: "/give" },
-  { label: "Request a website change", to: "/request" },
-] as const;
